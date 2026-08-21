@@ -1,16 +1,14 @@
 # Baseline Guard — Privacy Policy
 
-**Effective date: August 20, 2026**
+**Effective date: August 21, 2026**
 
 Baseline Guard ("the App") is a Jira Cloud app built on the Atlassian Forge platform that turns a Jira project's activity into concise, decision-ready status briefs for Executive, Client, and Internal audiences, with statements traceable to the Jira issues behind them.
 
-This Privacy Policy explains what information the App accesses, stores, and processes and why.
+This Privacy Policy explains what information the App accesses, stores, and processes and why. It applies to customers who install and use Baseline Guard through the Atlassian Marketplace.
 
-This policy applies to customers who install and use Baseline Guard through the Atlassian Marketplace.
+**Brian Levy, doing business as Levy Automations** ("we," "us," or "our") operates Baseline Guard.
 
-**Brian Levy, doing business as Brief for Jira** ("we," "us," or "our") operates Baseline Guard.
-
-For privacy or support questions, contact **levy1973@gmail.com**.
+For privacy or support questions, contact **help@levyautomations.com**.
 
 ## 1. What Baseline Guard Does
 
@@ -70,7 +68,7 @@ Completed generation results are retained for up to **7 days**, after which they
 
 Data stored through Atlassian Forge is associated with the customer's App installation. Following uninstall, Atlassian may retain Forge-hosted App data for a limited recovery period in accordance with Atlassian's Forge storage lifecycle.
 
-Customers may request deletion of information controlled by Baseline Guard by contacting **levy1973@gmail.com**.
+Customers may request deletion of information controlled by Baseline Guard by contacting **help@levyautomations.com**.
 
 ## 5. Why We Process Information
 
@@ -107,9 +105,9 @@ Baseline Guard does not maintain its own external AI API keys or send Jira infor
 
 ## 7. Data Sharing and Service Providers
 
-Baseline Guard does not operate its own external application servers and does not intentionally transmit customer Jira data to external services operated by Brief for Jira.
+Baseline Guard does not operate its own external application servers and does not intentionally transmit customer Jira data to external services operated by Levy Automations.
 
-The App uses Atlassian's Forge platform for its application hosting, storage, asynchronous processing, and supported AI capabilities.
+The App uses Atlassian's Forge platform for application hosting, storage, asynchronous processing, and supported AI capabilities.
 
 Accordingly, Atlassian processes information as part of providing the infrastructure and services on which Baseline Guard operates.
 
@@ -155,7 +153,7 @@ Users with questions about Jira information should generally contact their organ
 
 For questions or requests concerning information stored specifically by Baseline Guard, including requests concerning access, correction, or deletion, contact:
 
-**levy1973@gmail.com**
+**help@levyautomations.com**
 
 We will review and respond to reasonable requests as appropriate.
 
@@ -173,9 +171,14 @@ When we make material changes, we will update the effective date at the top of t
 
 ## 13. Contact
 
-**Baseline Guard**  
-Operated by **Brian Levy, doing business as Brief for Jira**
+**Baseline Guard for Jira**  
+Operated by **Brian Levy, doing business as Levy Automations**
 
-Email: **levy1973@gmail.com**
+**Levy Automations**  
+421 W Riverside Ave #381  
+Spokane, WA 99201  
+United States
+
+Email: **help@levyautomations.com**
 
 For questions about this Privacy Policy, Baseline Guard's data practices, or privacy-related requests, contact us at the email address above.
