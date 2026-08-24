@@ -1,5 +1,7 @@
 # Baseline Guard — Privacy Policy
 
+[Documentation](documentation.html) · **Privacy Policy** · [End User Terms](terms.html)
+
 **Effective date: August 21, 2026**
 
 Baseline Guard ("the App") is a Jira Cloud app built on the Atlassian Forge platform that turns a Jira project's activity into concise, decision-ready status briefs for Executive, Client, and Internal audiences, with statements traceable to the Jira issues behind them.

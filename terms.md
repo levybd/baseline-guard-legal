@@ -1,5 +1,7 @@
 # Baseline Guard — End User Terms
 
+[Documentation](documentation.html) · [Privacy Policy](privacy.html) · **End User Terms**
+
 **Effective date: August 21, 2026**
 
 These End User Terms ("Terms") govern your installation of and access to Baseline Guard for Jira ("Baseline Guard" or the "App").
