@@ -1,6 +1,6 @@
 # Baseline Guard for Jira — Support
 
-[Documentation](documentation.html) · **Support** · [Privacy Policy](privacy.html) · [End User Terms](terms.html) · [Security Information](terms.html#9-security)
+[Documentation](documentation.html) · **Support** · [Privacy Policy](privacy.html) · [End User Terms](terms.html) · [Security](security.html)
 
 Baseline Guard for Jira customer support is available through the public
 [Baseline Guard support portal](https://github.com/levybd/baseline-guard-legal/issues).
@@ -50,7 +50,7 @@ contractual service-level agreement.
 - [Customer documentation](documentation.html)
 - [Privacy Policy](privacy.html)
 - [End User Terms](terms.html)
-- [Security information](terms.html#9-security)
+- [Security Policy](security.html)
 
 Baseline Guard is operated by Brian Levy, a sole proprietor, under the product
 and business name Levy Automations.

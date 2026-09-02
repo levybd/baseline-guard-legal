@@ -1,6 +1,6 @@
 # Baseline Guard — Documentation
 
-[Customer Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html)
+[Customer Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html) · [Security](security.html)
 
 ## Overview
 

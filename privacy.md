@@ -1,6 +1,6 @@
 # Baseline Guard — Privacy Policy
 
-[Documentation](documentation.html) · [Support](support.html) · **Privacy Policy** · [End User Terms](terms.html)
+[Documentation](documentation.html) · [Support](support.html) · **Privacy Policy** · [End User Terms](terms.html) · [Security](security.html)
 
 **Effective date: August 25, 2026**
 
@@ -47,11 +47,11 @@ Baseline Guard respects the Jira permissions of the user generating the assessme
 
 ## 3. Information Baseline Guard Stores
 
-**Baseline Guard does not persist Jira issue content or generated assessments as a separate customer data store.**
+Assessments are generated on demand from Jira evidence available at the time of generation. During generation, Jira information is processed transiently within Atlassian Forge.
 
-Assessments are generated on demand from Jira evidence available at the time of generation.
+To support asynchronous generation and allow the requesting user to retrieve a result, Baseline Guard writes a generation-job record to Atlassian Forge Key-Value Store (KVS). Depending on the job state, that record may contain the requesting user's Atlassian account identifier, Jira project key and name, selected reporting period and audience, job status and timestamps, a validated assessment and its evidence-derived fields, deterministic baseline, governance, and provenance information, or a structured error.
 
-Baseline Guard does not intentionally store Jira issue summaries, comments, descriptions, generated assessment content, or other Jira issue content in application storage.
+Baseline Guard does not operate an independently hosted or externally managed customer data store. These generation-job records remain within Atlassian-hosted Forge storage. Baseline Guard does not fetch Jira comments and does not intentionally write credentials or access tokens to generation-job records.
 
 Local interactions or edits to a generated report are page-local and are not persisted by Baseline Guard.
 
@@ -59,7 +59,12 @@ Baseline Guard does not intentionally log Jira issue content.
 
 ## 4. Data Retention
 
-Because Baseline Guard does not persist Jira issue content or generated assessments as a separate customer data store, it does not maintain a retention period for generated assessments.
+Generation-job records use state-based time-to-live controls in Atlassian Forge KVS:
+
+- Active records in the **QUEUED** or **RUNNING** state receive a one-hour time-to-live when written.
+- Terminal records, including completed assessments and failed or non-assessable results, receive a seven-day time-to-live when written.
+
+Each time a job record is updated, the time-to-live appropriate to its current state is applied. Forge KVS expires the record after that period unless it is updated again or deleted earlier. Baseline Guard's personal-data reporting process may delete records earlier when Atlassian identifies a stored account as closed.
 
 A newly generated assessment evaluates the Jira evidence available at the time it is generated.
 
@@ -130,7 +135,7 @@ Baseline Guard:
 - Does not require Jira write permissions for assessment generation
 - Respects the permissions of the current Jira user
 - Does not fetch Jira comments
-- Does not intentionally persist Jira issue content or generated assessments
+- Stores generation-job records only in Atlassian Forge KVS with the state-based retention described above
 - Does not intentionally log Jira issue content
 - Validates evidence references used in generated assessments
 - Separates evidence-supported facts from interpretations and recommendations where appropriate
@@ -143,7 +148,7 @@ Baseline Guard may process personal information contained in Jira issue data whe
 
 Baseline Guard does not request access to the customer's Jira user directory through the `read:jira-user` scope.
 
-Baseline Guard does not intentionally persist personal information contained in Jira issue content as a separate customer data store.
+Baseline Guard may retain the requesting user's Atlassian account identifier and limited personal information incorporated into a generation-job record for the state-based retention period described above. It does not operate a separate externally hosted customer data store.
 
 ## 11. Your Privacy Requests
 

@@ -1,6 +1,6 @@
 # Baseline Guard — End User Terms
 
-[Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · **End User Terms**
+[Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · **End User Terms** · [Security](security.html)
 
 **Effective date: August 21, 2026**
 

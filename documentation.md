@@ -1,6 +1,6 @@
 # Baseline Guard for Jira — Customer Documentation
 
-**Documentation** · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html)
+**Documentation** · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html) · [Security](security.html)
 
 Baseline Guard is an evidence-based project reporting app for Jira Cloud. It
 checks whether a Jira project contains enough evidence to support a project
