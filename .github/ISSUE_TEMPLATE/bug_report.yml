@@ -1,0 +1,50 @@
+name: Bug report
+description: Report unexpected Baseline Guard behavior or an error.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a Baseline Guard problem.
+
+        **Do not submit secrets, credentials, passwords, access tokens, personal data, confidential Jira content, report bodies, customer information, or security vulnerabilities here.** Public issues are visible to everyone. Report account, privacy, or security matters privately to help@levyautomations.com.
+  - type: input
+    id: version
+    attributes:
+      label: Baseline Guard version
+      description: Enter the version shown in Jira, if available.
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Audience mode
+      options:
+        - Executive
+        - Client
+        - Internal
+        - Not applicable
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem without including sensitive Jira or customer information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Non-sensitive reproduction steps
+      description: Provide the minimum steps needed to reproduce the problem.
+  - type: input
+    id: time
+    attributes:
+      label: Approximate time
+      description: Include your time zone. Do not include account identifiers.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-information confirmation
+      options:
+        - label: I confirm this issue contains no secrets, credentials, personal data, confidential Jira content, customer information, or security vulnerability details.
+          required: true

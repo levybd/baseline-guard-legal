@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement to Baseline Guard.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement.
+
+        **Do not submit secrets, credentials, passwords, access tokens, personal data, confidential Jira content, report bodies, customer information, or security vulnerabilities here.** Public issues are visible to everyone. Report security matters privately to help@levyautomations.com.
+  - type: textarea
+    id: need
+    attributes:
+      label: What customer need would this address?
+      description: Describe the need without including confidential project or customer details.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Explain the result you would find useful. Do not include sensitive examples.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-information confirmation
+      options:
+        - label: I confirm this issue contains no secrets, credentials, personal data, confidential Jira content, customer information, or security vulnerability details.
+          required: true

@@ -1,0 +1,44 @@
+name: Support request
+description: Ask for help installing, accessing, licensing, configuring, or using Baseline Guard.
+title: "[Support]: "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for general product support.
+
+        **Do not submit secrets, credentials, passwords, access tokens, personal data, confidential Jira content, report bodies, customer information, or security vulnerabilities here.** Public issues are visible to everyone. Send account, billing, privacy, or security matters privately to help@levyautomations.com.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Support topic
+      options:
+        - Installation or access
+        - Licensing or trial
+        - Running an assessment
+        - Understanding a report
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: How can we help?
+      description: Describe the request using only non-sensitive information.
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+      description: Optional non-sensitive troubleshooting details.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-information confirmation
+      options:
+        - label: I confirm this issue contains no secrets, credentials, personal data, confidential Jira content, customer information, or security vulnerability details.
+          required: true
