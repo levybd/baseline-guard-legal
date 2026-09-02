@@ -1,5 +1,7 @@
 # Baseline Guard — Documentation
 
+[Customer Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html)
+
 ## Overview
 
 **Baseline Guard turns Jira evidence into clear, defensible project assessments and decision-ready reporting.**

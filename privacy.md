@@ -1,6 +1,6 @@
 # Baseline Guard — Privacy Policy
 
-[Documentation](docs.html) · **Privacy Policy** · [End User Terms](terms.html)
+[Documentation](documentation.html) · [Support](support.html) · **Privacy Policy** · [End User Terms](terms.html)
 
 **Effective date: August 25, 2026**
 

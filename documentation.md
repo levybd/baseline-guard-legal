@@ -1,6 +1,6 @@
 # Baseline Guard for Jira — Customer Documentation
 
-**Documentation** · [Privacy Policy](privacy.html) · [End User Terms](terms.html)
+**Documentation** · [Support](support.html) · [Privacy Policy](privacy.html) · [End User Terms](terms.html)
 
 Baseline Guard is an evidence-based project reporting app for Jira Cloud. It
 checks whether a Jira project contains enough evidence to support a project
@@ -189,9 +189,9 @@ Marketplace subscription terms.
 
 ## Support
 
-For Baseline Guard support, email **help@levyautomations.com**. Include the Jira
-site URL, app version, approximate time of the problem, selected reporting
-period and audience, visible error code, and non-sensitive reproduction steps.
+Visit the [Baseline Guard Support page](support.html) to open a support request,
+report a bug, request a feature, or contact us privately about an account,
+privacy, or security matter.
 
 Do not send report bodies, passwords, access tokens, or confidential Jira issue
 content in an initial support request.

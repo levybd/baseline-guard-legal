@@ -1,6 +1,6 @@
 # Baseline Guard — End User Terms
 
-[Documentation](documentation.html) · [Privacy Policy](privacy.html) · **End User Terms**
+[Documentation](documentation.html) · [Support](support.html) · [Privacy Policy](privacy.html) · **End User Terms**
 
 **Effective date: August 21, 2026**
 
@@ -116,7 +116,10 @@ You are responsible for maintaining appropriate security for your Atlassian acco
 
 Support requests may be submitted to:
 
-**help@levyautomations.com**
+**[Baseline Guard Support](support.html)**
+
+Account, privacy, and security matters may be submitted privately to
+**help@levyautomations.com**.
 
 We will make commercially reasonable efforts to respond to support requests.
 
