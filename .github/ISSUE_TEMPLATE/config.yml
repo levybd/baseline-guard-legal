@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private account, privacy, or security report
+    url: https://levybd.github.io/baseline-guard-legal/support.html#private-account-privacy-and-security-reports
+    about: Do not disclose security vulnerabilities or sensitive information publicly. Use the private email route on the support page.
