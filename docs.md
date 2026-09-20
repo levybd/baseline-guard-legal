@@ -318,9 +318,11 @@ It is designed to produce an evidence-backed project assessment that stakeholder
 
 Baseline Guard assessments are generated on demand from Jira data.
 
-**Baseline Guard does not persist generated assessments or Jira issue content as a separate customer data store.**
+Baseline Guard does not operate an independently hosted or externally managed customer-data store. During assessment generation, Jira information is processed by the Forge app, and a generation/assessment record may be stored in Atlassian-hosted Forge Key-Value Store (KVS).
 
-Jira issue content is not intentionally written to application storage.
+Depending on the job state, that record may include the requestor's Atlassian account ID; Jira project key and name; selected reporting period and audience; job status and timestamps; validated assessment and evidence-derived fields; deterministic baseline, governance, and provenance information; or structured error information.
+
+Active **QUEUED** and **RUNNING** records receive a one-hour time-to-live when written. Terminal records, including completed, failed, and non-assessable records, receive a seven-day time-to-live when written. The applicable time-to-live is applied again when a record is updated, and records may be deleted sooner through the app's personal-data reporting process.
 
 Generated assessment content is not written back to Jira.
 
