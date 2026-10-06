@@ -8,7 +8,7 @@ This Security Policy describes how Baseline Guard for Jira is secured and how se
 
 ## 1. Scope and security boundary
 
-Baseline Guard is a Jira Cloud app built and hosted on Atlassian Forge. Its application functions, asynchronous processing, queue, key-value storage, and native Forge large-language-model capability run on Atlassian-hosted Forge services. Baseline Guard does not operate an independently hosted application backend and is designed without external network egress for customer Jira issue data.
+Baseline Guard is a Jira Cloud app built and hosted on Atlassian Forge. Its application functions, asynchronous processing, queue, and key-value storage run on Atlassian-hosted Forge services. Current assessment and report generation is deterministic and does not call a large language model. Baseline Guard does not operate an independently hosted application backend and is designed without external network egress for customer Jira issue data.
 
 Atlassian operates and secures the Forge platform and Jira Cloud infrastructure under Atlassian's own policies and practices. Levy Automations is responsible for the Baseline Guard application code, its requested permissions, application-level authorization controls, dependency maintenance, and response to reported security issues. Atlassian's platform controls are not represented as independent Levy Automations certifications or controls.
 
