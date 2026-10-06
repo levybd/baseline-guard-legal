@@ -80,6 +80,18 @@ Baseline Guard reports what the supported Jira evidence establishes at the
 time of assessment. Its reports are decision support, not forecasts,
 guarantees, or professional advice.
 
+## BASELINE INCOMPLETE and NOT ASSESSABLE
+
+**BASELINE INCOMPLETE** means at least one mandatory evidence prerequisite is
+proven deficient. The report names the failed condition and the Jira evidence
+behind it. **NOT ASSESSABLE** means required evidence cannot be verified, or
+the governance checks cannot support a defensible project health status.
+
+Both outcomes withhold ON TRACK, AT RISK, and OFF TRACK. Review the established
+requirements, proven deficiencies, evidence gaps, and proposed Jira remediation.
+Full assessment readiness means status can be assessed; it does not mean the
+project is healthy.
+
 ## Four different report concepts
 
 These concepts answer different questions and should be read separately:
