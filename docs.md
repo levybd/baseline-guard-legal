@@ -28,7 +28,7 @@ To generate an assessment:
 1. Select a Jira project.
 2. Choose a reporting period.
 3. Select an audience: **Executive, Client, or Internal**.
-4. Select **Generate**.
+4. Select **Run assessment**.
 
 Baseline Guard evaluates Jira information available to the current user and produces an evidence-backed project assessment.
 
@@ -40,11 +40,25 @@ Baseline Guard is read-only. Generating an assessment does not modify Jira issue
 
 Baseline Guard evaluates available Jira evidence rather than simply repeating Jira status fields.
 
-An assessment can return one of three outcomes:
+An assessment can return a supported project health status or explicitly withhold status:
 
 - **ON TRACK** — available evidence supports the current delivery position.
 - **AT RISK** — available evidence indicates meaningful delivery exposure requiring attention.
-- **NOT ASSESSABLE** — Jira does not contain sufficient evidence to support a defensible assessment.
+- **OFF TRACK** — supported Jira evidence identifies material current delivery exposure.
+- **NOT ASSESSABLE** — required evidence cannot be verified, or governance checks cannot support a defensible assessment.
+- **BASELINE INCOMPLETE** — at least one mandatory evidence prerequisite is proven deficient. No project health status is issued.
+
+## BASELINE INCOMPLETE and NOT ASSESSABLE
+
+**BASELINE INCOMPLETE** means at least one mandatory evidence prerequisite is
+proven deficient. The report names the failed condition and the Jira evidence
+behind it. **NOT ASSESSABLE** means required evidence cannot be verified, or
+the governance checks cannot support a defensible project health status.
+
+Both outcomes withhold ON TRACK, AT RISK, and OFF TRACK. Review the established
+requirements, proven deficiencies, evidence gaps, and proposed Jira remediation.
+Full assessment readiness means status can be assessed; it does not mean the
+project is healthy.
 
 ### Why NOT ASSESSABLE Matters
 
@@ -292,25 +306,19 @@ Information included in the generated report can vary according to the selected 
 
 ---
 
-## AI-Assisted Analysis
+## Deterministic assessment and reporting
 
-Baseline Guard uses Atlassian's native **Forge LLM** capability to assist with structured analysis and reporting.
+Current report generation runs within Atlassian Forge and uses deterministic
+baseline checks, governance rules, and audience report assembly. It does not
+use an LLM to generate the current project status or report content.
 
-Report generation runs within the Atlassian Forge environment.
+Executive, Client, and Internal reports use the same Jira facts and authoritative
+determination, with presentation appropriate to the selected audience. Facts,
+interpretations, and proposed actions are distinguished. The app does not invent
+owners, dates, dependencies, impacts, or consequences that Jira does not establish.
 
-Baseline Guard does not require customers to provide external AI API keys and does not send Jira issue data to an external AI provider operated by Baseline Guard.
-
-AI-generated output is constrained by the Jira evidence supplied to the assessment.
-
-Baseline Guard validates evidence references against the Jira issues available to the assessment so unsupported issue references cannot silently become evidence for a conclusion.
-
-Facts and interpretations are distinguished where appropriate.
-
-Recommendations are identified as recommendations rather than facts.
-
-Baseline Guard is not designed to produce a generic AI summary.
-
-It is designed to produce an evidence-backed project assessment that stakeholders can understand, evaluate, and defend.
+The app does not require external AI API keys or send Jira issue data to an
+external AI provider operated by Baseline Guard.
 
 ---
 
