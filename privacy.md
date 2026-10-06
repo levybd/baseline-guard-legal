@@ -89,21 +89,22 @@ We do not use customer Jira data for advertising, marketing, or user profiling.
 
 We do not sell customer Jira data or personal information.
 
-## 6. AI and Large Language Model Processing
+## 6. Deterministic assessment and report processing
 
-Baseline Guard uses AI-assisted generation through Atlassian's native Forge LLM capability.
+Current project assessments and reports are generated deterministically within
+Atlassian Forge. Baseline checks establish readiness, governance rules determine
+supported project status, and audience reports are assembled from the same Jira
+evidence. Current report generation does not send Jira context to an LLM or use
+AI-generated status or report content.
 
-Relevant Jira context may be processed using models made available through Atlassian Forge to assist with structured analysis and reporting.
+Baseline Guard distinguishes facts from interpretations and identifies proposed
+actions as proposals rather than established facts. When required evidence fails
+or cannot be verified, the app returns **BASELINE INCOMPLETE** or **NOT ASSESSABLE**
+instead of assigning an unsupported project health status.
 
-Baseline Guard applies validation and governance controls to generated output and validates evidence references against Jira issues available to the assessment.
-
-Baseline Guard distinguishes facts from interpretations where appropriate and identifies recommendations as recommendations rather than established facts.
-
-When required evidence is insufficient, Baseline Guard may return a **NOT ASSESSABLE** result rather than manufacture a supported project assessment.
-
-Baseline Guard does not require customers to provide external AI API keys.
-
-Baseline Guard does not intentionally transmit customer Jira issue data to an independently operated external AI service controlled by Levy Automations.
+Baseline Guard does not require external AI API keys and does not intentionally
+transmit customer Jira issue data to an independently operated external AI service
+controlled by Levy Automations.
 
 ## 7. Data Sharing and Service Providers
 
